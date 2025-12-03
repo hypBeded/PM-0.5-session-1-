@@ -5,8 +5,104 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLogic.Windows"
         mc:Ignorable="d"
-        Title="SignUp" Height="450" Width="800">
+        Title="SignUp" Height="650" Width="800">
     <Grid>
-       
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <Label Content="Вход" 
+        FontSize="30" 
+        HorizontalAlignment="Center"
+        FontFamily="Comic Sans MS"
+        Margin="0,0,0,40" />
+
+            <TextBox x:Name="Login" 
+                  Text="Почта"
+                  BorderBrush="Black" 
+                  BorderThickness="1" 
+                  Width="300" 
+                  Height="50" 
+                  Margin="0,0,0,20"  
+                  HorizontalContentAlignment="Left"
+                  VerticalContentAlignment="Center"
+                  FontFamily="Comic Sans MS"
+                  FontSize="18"
+                  Padding="10,0" />
+            <TextBox x:Name="LasName" 
+                Text="Фамилия"
+                BorderBrush="Black" 
+                BorderThickness="1" 
+                Width="300" 
+                Height="50" 
+                Margin="0,0,0,20"  
+                HorizontalContentAlignment="Left"
+                VerticalContentAlignment="Center"
+                FontFamily="Comic Sans MS"
+                FontSize="18"
+                Padding="10,0" />
+            <TextBox x:Name="Name" 
+                Text="Имя"
+                BorderBrush="Black" 
+                BorderThickness="1" 
+                Width="300" 
+                Height="50" 
+                Margin="0,0,0,20"  
+                HorizontalContentAlignment="Left"
+                VerticalContentAlignment="Center"
+                FontFamily="Comic Sans MS"
+                FontSize="18"
+                Padding="10,0" />
+
+
+            <TextBox x:Name="Otchestvo" 
+          Text="Отчество"
+          BorderBrush="Black" 
+          BorderThickness="1" 
+          Width="300" 
+          Height="50" 
+          Margin="0,0,0,40" 
+          HorizontalContentAlignment="Left"
+          VerticalContentAlignment="Center"
+          FontFamily="Comic Sans MS"
+          FontSize="18"
+          Padding="10, 0"/>
+            <TextBox x:Name="Password" 
+            Text="Пароль"
+            BorderBrush="Black" 
+            BorderThickness="1" 
+            Width="300" 
+            Height="50" 
+            Margin="0,0,0,40" 
+            HorizontalContentAlignment="Left"
+            VerticalContentAlignment="Center"
+            FontFamily="Comic Sans MS"
+            FontSize="18"
+            Padding="10,0"/>
+
+            <Button 
+         Style="{DynamicResource BorderForButton}"
+         x:Name="LogInButton" 
+         Content="Вход" 
+         BorderBrush="Black" 
+         BorderThickness="1" 
+         Width="150" 
+         Height="50" 
+         FontSize="24" 
+         FontFamily="Comic Sans MS" 
+         Background="#76e383"
+         Foreground="Black"
+         FontWeight="Bold"
+         HorizontalAlignment="Center"
+         Cursor="Hand"  />
+
+            <TextBlock Margin="0,20,0,0"
+            HorizontalAlignment="Center"
+            FontFamily="Comic Sans MS"
+            FontSize="16" >
+             Есть аккаунт?
+             <Hyperlink Foreground="#0078D7">
+                Войти
+             </Hyperlink>
+            </TextBlock>
+        </StackPanel>
     </Grid>
 </Window>

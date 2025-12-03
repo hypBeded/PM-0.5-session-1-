@@ -40,8 +40,6 @@
                  FontSize="18"
                  Padding="10,0"/>
 
-
-            <!-- Кнопка входа -->
             <Button 
                 Style="{DynamicResource BorderForButton}"
                 x:Name="LogInButton" 
@@ -58,21 +56,15 @@
                 HorizontalAlignment="Center"
                 Cursor="Hand"  />
 
-
-
-            <!-- Ссылка на регистрацию (если нужно) -->
-                   <TextBlock Margin="0,20,0,0"
+            <TextBlock Margin="0,20,0,0"
                    HorizontalAlignment="Center"
                    FontFamily="Comic Sans MS"
                    FontSize="16" >
-                                   
-                   <Hyperlink Foreground="#0078D7">
-                                 Зарегистрироваться
-                   </Hyperlink>
-                   
-                   
-                    
-            </TextBlock>
+                    Нет аккаунта?
+                    <Hyperlink Foreground="#0078D7">
+                        Зарегистрироваться
+                    </Hyperlink>    
+             </TextBlock>
         </StackPanel>
     </Grid>
 </Window>
