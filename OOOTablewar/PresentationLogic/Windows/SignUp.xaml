@@ -99,7 +99,7 @@
             FontFamily="Comic Sans MS"
             FontSize="16" >
              Есть аккаунт?
-             <Hyperlink Foreground="#0078D7">
+             <Hyperlink Foreground="#0078D7" Click="logIn_Click">
                 Войти
              </Hyperlink>
             </TextBlock>

@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PresentationLogic.Windows;
 
 namespace PresentationLogic
 {
@@ -19,6 +20,14 @@ namespace PresentationLogic
         public LogIn()
         {
             InitializeComponent();
+        }
+        private void SignUp_Click(object sender, RoutedEventArgs e)
+        {
+            
+            SignUp sign = new SignUp();
+            sign.Show();
+            this.Close();
+
         }
     }
 }

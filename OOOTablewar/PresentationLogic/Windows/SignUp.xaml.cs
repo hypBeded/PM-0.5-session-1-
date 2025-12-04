@@ -23,5 +23,14 @@ namespace PresentationLogic.Windows
         {
             InitializeComponent();
         }
+
+        private void logIn_Click(object sender, RoutedEventArgs e)
+        {
+
+            LogIn logIn = new LogIn();
+            logIn.Show();
+            this.Close();
+
+        }
     }
 }

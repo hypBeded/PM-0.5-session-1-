@@ -16,6 +16,7 @@
                Margin="0,0,0,40" />
 
             <TextBox x:Name="Login" 
+                     Text="Почта"
                  BorderBrush="Black" 
                  BorderThickness="1" 
                  Width="300" 
@@ -29,6 +30,7 @@
 
 
             <TextBox x:Name="Password" 
+                     Text="Пароль"
                  BorderBrush="Black" 
                  BorderThickness="1" 
                  Width="300" 
@@ -61,7 +63,7 @@
                    FontFamily="Comic Sans MS"
                    FontSize="16" >
                     Нет аккаунта?
-                    <Hyperlink Foreground="#0078D7">
+                    <Hyperlink Foreground="#0078D7" Click="SignUp_Click" >
                         Зарегистрироваться
                     </Hyperlink>    
              </TextBlock>
