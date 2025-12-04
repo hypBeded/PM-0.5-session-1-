@@ -62,8 +62,8 @@ namespace PresentationLogic
                             if (reader.Read()) // Если есть хотя бы одна строка
                             {
                                 MessageBox.Show("Вход выполнен!");
-                                SignUp sign = new SignUp();
-                                sign.Show();
+                                Windows.Products products = new Windows.Products();
+                                products.Show();
                                 this.Close();
                             }
                             else
