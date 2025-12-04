@@ -4,9 +4,216 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLogic"
+        xmlns:conv="clr-namespace:PresentationLogic.Converters"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Каталог товаров" 
+        Height="700" 
+        Width="1000"
+        WindowStartupLocation="CenterScreen"
+        MinWidth="800"
+        MinHeight="500">
 
+    <Window.Resources>
+        <conv:StockStatusConverter x:Key="StockConverter"/>
+        <conv:ImageConverter x:Key="ImageConverter"/>
+        <conv:PriceConverter x:Key="PriceConverter"/>
+        <BooleanToVisibilityConverter x:Key="BoolToVisConverter"/>
+
+        <!-- Стиль для отображения скидки -->
+        <Style x:Key="DiscountTextStyle" TargetType="TextBlock">
+            <Setter Property="Visibility" Value="Collapsed"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding CurrentDiscount}" Value="0">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding CurrentDiscount}">
+                    <Setter Property="Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <!-- Заголовок -->
+        <TextBlock Text="Каталог товаров" 
+                   FontSize="24" 
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,20,0,0"
+                   VerticalAlignment="Top"/>
+
+        <!-- Список товаров -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,60,0,0">
+            <ItemsControl ItemsSource="{Binding Products}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" 
+                                   HorizontalAlignment="Center"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <!-- Карточка товара -->
+                        <Border BorderBrush="#E0E0E0" 
+                                BorderThickness="1" 
+                                Background="White"
+                                CornerRadius="5"
+                                Margin="10"
+                                Width="280"
+                                Height="400">
+                            <Grid Margin="15">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="150"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <!-- Фото товара -->
+                                <Border Grid.Row="0"
+                                        Background="#F5F5F5"
+                                        CornerRadius="3"
+                                        Margin="0,0,0,10">
+                                    <Image Source="{Binding Image, Converter={StaticResource ImageConverter}}"
+                                           Stretch="Uniform"/>
+                                </Border>
+
+                                <!-- Наименование товара -->
+                                <TextBlock Grid.Row="1"
+                                           Text="{Binding Name}"
+                                           FontWeight="Bold"
+                                           FontSize="14"
+                                           TextWrapping="Wrap"
+                                           Margin="0,0,0,5"/>
+
+                                <!-- Описание товара -->
+                                <TextBlock Grid.Row="2"
+                                           Text="{Binding Description}"
+                                           FontSize="12"
+                                           Foreground="#666"
+                                           TextWrapping="Wrap"
+                                           MaxHeight="40"
+                                           TextTrimming="CharacterEllipsis"
+                                           Margin="0,0,0,5"/>
+
+                                <!-- Производитель -->
+                                <TextBlock Grid.Row="3"
+                                           Text="{Binding Manufacturer, StringFormat='Производитель: {0}'}"
+                                           FontSize="12"
+                                           Foreground="#444"
+                                           Margin="0,0,0,5"/>
+
+                                <!-- Цена -->
+                                <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="0,0,0,5">
+                                    <TextBlock Text="Цена: "
+                                               FontSize="14"
+                                               Foreground="#666"/>
+                                    <TextBlock FontSize="16"
+                                               FontWeight="Bold"
+                                               Foreground="#1976D2"
+                                               Text="{Binding Price, StringFormat='{0:N2} ₽'}"/>
+                                </StackPanel>
+
+                                <!-- Цена со скидкой (если есть скидка) -->
+                                <StackPanel Grid.Row="5" 
+                                            Orientation="Horizontal" 
+                                            Margin="0,0,0,10"
+                                            Visibility="{Binding CurrentDiscount, Converter={StaticResource BoolToVisConverter}}">
+                                    <TextBlock Text="Со скидкой: "
+                                               FontSize="12"
+                                               Foreground="#666"/>
+                                    <TextBlock FontSize="14"
+                                               FontWeight="Bold"
+                                               Foreground="Red">
+                                        <TextBlock.Text>
+                                            <MultiBinding StringFormat="{}{0:N2} ₽">
+                                                <Binding Path="Price">
+                                                    <Binding.Converter>
+                                                        <conv:PriceConverter/>
+                                                    </Binding.Converter>
+                                                    <Binding.ConverterParameter>
+                                                        <Binding Path="CurrentDiscount"/>
+                                                    </Binding.ConverterParameter>
+                                                </Binding>
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
+                                    <TextBlock Text="{Binding CurrentDiscount, StringFormat=' ({0}%)'}"
+                                               FontSize="12"
+                                               Foreground="Red"
+                                               Margin="5,0,0,0"/>
+                                </StackPanel>
+
+                                <!-- Наличие на складе и артикул -->
+                                <Grid Grid.Row="6">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- Наличие на складе -->
+                                    <Border CornerRadius="3"
+                                            Padding="8,4"
+                                            HorizontalAlignment="Left">
+                                        <Border.Background>
+                                            <MultiBinding Converter="{StaticResource StockConverter}">
+                                                <Binding Path="StockQuantity"/>
+                                            </MultiBinding>
+                                        </Border.Background>
+                                        <TextBlock Foreground="White"
+                                                   FontWeight="SemiBold"
+                                                   FontSize="11">
+                                            <TextBlock.Text>
+                                                <MultiBinding Converter="{StaticResource StockConverter}" 
+                                                              ConverterParameter="text">
+                                                    <Binding Path="StockQuantity"/>
+                                                </MultiBinding>
+                                            </TextBlock.Text>
+                                        </TextBlock>
+                                    </Border>
+
+                                    <!-- Артикул -->
+                                    <TextBlock Grid.Column="1"
+                                               Text="{Binding Article, StringFormat='Арт: {0}'}"
+                                               FontSize="10"
+                                               Foreground="#888"
+                                               VerticalAlignment="Center"/>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <!-- Индикатор загрузки -->
+        <Border Background="#CCFFFFFF" 
+                Visibility="{Binding IsLoading, Converter={StaticResource BoolToVisConverter}}">
+            <StackPanel HorizontalAlignment="Center" 
+                        VerticalAlignment="Center">
+                <ProgressBar IsIndeterminate="True" 
+                             Width="200" 
+                             Height="20"
+                             Margin="0,0,0,10"/>
+                <TextBlock Text="Загрузка товаров..." 
+                           FontSize="14"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Информация о количестве товаров -->
+        <Border Background="White"
+                BorderBrush="#E0E0E0"
+                BorderThickness="0,1,0,0"
+                Height="40"
+                VerticalAlignment="Bottom">
+            <TextBlock Text="{Binding Products.Count, StringFormat='Всего товаров: {0}'}"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="12"/>
+        </Border>
     </Grid>
 </Window>

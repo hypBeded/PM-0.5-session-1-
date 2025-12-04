@@ -3,20 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E79FA348-D66A-4823-9059-544A1D25D799}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\andromack\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C05\\oootablewar\\businesslogic\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E79FA348-D66A-4823-9059-544A1D25D799}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C05\\oootablewar\\presentationlogic\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C05\\oootablewar\\presentationlogic\\converters\\stockstatusconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\converters\\stockstatusconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C05\\oootablewar\\presentationlogic\\converters\\imageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\converters\\imageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C05\\oootablewar\\presentationlogic\\converters\\priceconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\converters\\priceconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C05\\oootablewar\\presentationlogic\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3635BB89-16D4-46E6-B31D-15845FE64BF9}|DataBaseLogic\\DataBaseLogic.csproj|c:\\users\\andromack\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C05\\oootablewar\\databaselogic\\databaselogic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3635BB89-16D4-46E6-B31D-15845FE64BF9}|DataBaseLogic\\DataBaseLogic.csproj|solutionrelative:databaselogic\\databaselogic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C05\\oootablewar\\presentationlogic\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C05\\oootablewar\\presentationlogic\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C05\\oootablewar\\presentationlogic\\presentationlogic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\presentationlogic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3635BB89-16D4-46E6-B31D-15845FE64BF9}|DataBaseLogic\\DataBaseLogic.csproj|c:\\users\\andromack\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C05\\oootablewar\\databaselogic\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3635BB89-16D4-46E6-B31D-15845FE64BF9}|DataBaseLogic\\DataBaseLogic.csproj|solutionrelative:databaselogic\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3635BB89-16D4-46E6-B31D-15845FE64BF9}|DataBaseLogic\\DataBaseLogic.csproj|c:\\users\\andromack\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C05\\oootablewar\\databaselogic\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3635BB89-16D4-46E6-B31D-15845FE64BF9}|DataBaseLogic\\DataBaseLogic.csproj|solutionrelative:databaselogic\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3635BB89-16D4-46E6-B31D-15845FE64BF9}|DataBaseLogic\\DataBaseLogic.csproj|c:\\users\\andromack\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C05\\oootablewar\\databaselogic\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3635BB89-16D4-46E6-B31D-15845FE64BF9}|DataBaseLogic\\DataBaseLogic.csproj|solutionrelative:databaselogic\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3635BB89-16D4-46E6-B31D-15845FE64BF9}|DataBaseLogic\\DataBaseLogic.csproj|c:\\users\\andromack\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C05\\oootablewar\\databaselogic\\databaselogic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3635BB89-16D4-46E6-B31D-15845FE64BF9}|DataBaseLogic\\DataBaseLogic.csproj|solutionrelative:databaselogic\\databaselogic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +54,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\PresentationLogic\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "PresentationLogic\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\PresentationLogic\\Services\\ProductService.cs",
+              "RelativeToolTip": "PresentationLogic\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T11:25:28.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ImageConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\PresentationLogic\\Converters\\ImageConverter.cs",
+              "RelativeDocumentMoniker": "PresentationLogic\\Converters\\ImageConverter.cs",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\PresentationLogic\\Converters\\ImageConverter.cs",
+              "RelativeToolTip": "PresentationLogic\\Converters\\ImageConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T11:24:01.613Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -37,56 +91,124 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\BusinessLogic\\Class1.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Class1.cs",
-              "ToolTip": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\BusinessLogic\\Class1.cs",
-              "RelativeToolTip": "BusinessLogic\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T14:09:40.898Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DataBaseLogic.csproj",
-              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\DataBaseLogic\\DataBaseLogic.csproj",
-              "RelativeDocumentMoniker": "DataBaseLogic\\DataBaseLogic.csproj",
-              "ToolTip": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\DataBaseLogic\\DataBaseLogic.csproj",
-              "RelativeToolTip": "DataBaseLogic\\DataBaseLogic.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-02T13:50:18.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\PresentationLogic\\MainWindow.xaml",
               "RelativeDocumentMoniker": "PresentationLogic\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\PresentationLogic\\MainWindow.xaml",
               "RelativeToolTip": "PresentationLogic\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-02T13:07:55.729Z"
+              "WhenOpened": "2025-12-02T13:07:55.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PresentationLogic",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\PresentationLogic\\PresentationLogic.csproj",
+              "RelativeDocumentMoniker": "PresentationLogic\\PresentationLogic.csproj",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\PresentationLogic\\PresentationLogic.csproj",
+              "RelativeToolTip": "PresentationLogic\\PresentationLogic.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-04T10:41:18.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PriceConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\PresentationLogic\\Converters\\PriceConverter.cs",
+              "RelativeDocumentMoniker": "PresentationLogic\\Converters\\PriceConverter.cs",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\PresentationLogic\\Converters\\PriceConverter.cs",
+              "RelativeToolTip": "PresentationLogic\\Converters\\PriceConverter.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T11:24:13.671Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "StockStatusConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\PresentationLogic\\Converters\\StockStatusConverter.cs",
+              "RelativeDocumentMoniker": "PresentationLogic\\Converters\\StockStatusConverter.cs",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\PresentationLogic\\Converters\\StockStatusConverter.cs",
+              "RelativeToolTip": "PresentationLogic\\Converters\\StockStatusConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T11:24:22.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\PresentationLogic\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "PresentationLogic\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\PresentationLogic\\MainWindow.xaml.cs",
               "RelativeToolTip": "PresentationLogic\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T13:07:52.576Z"
+              "WhenOpened": "2025-12-02T13:07:52.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\DataBaseLogic\\Product.cs",
+              "RelativeDocumentMoniker": "DataBaseLogic\\Product.cs",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\DataBaseLogic\\Product.cs",
+              "RelativeToolTip": "DataBaseLogic\\Product.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAwGcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T10:46:57.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DatabaseContext.cs",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\DataBaseLogic\\DatabaseContext.cs",
+              "RelativeDocumentMoniker": "DataBaseLogic\\DatabaseContext.cs",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\DataBaseLogic\\DatabaseContext.cs",
+              "RelativeToolTip": "DataBaseLogic\\DatabaseContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T11:00:48.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\DataBaseLogic\\User.cs",
+              "RelativeDocumentMoniker": "DataBaseLogic\\User.cs",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\DataBaseLogic\\User.cs",
+              "RelativeToolTip": "DataBaseLogic\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T14:36:01.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DataBaseLogic.csproj",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\DataBaseLogic\\DataBaseLogic.csproj",
+              "RelativeDocumentMoniker": "DataBaseLogic\\DataBaseLogic.csproj",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C05\\OOOTablewar\\DataBaseLogic\\DataBaseLogic.csproj",
+              "RelativeToolTip": "DataBaseLogic\\DataBaseLogic.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-02T13:50:18.939Z",
+              "EditorCaption": ""
             }
           ]
         },

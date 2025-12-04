@@ -183,6 +183,19 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "DataBaseLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Data.Sqlite": "10.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataBaseLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataBaseLogic.dll": {}
+        }
       }
     }
   },
@@ -332,10 +345,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DataBaseLogic/1.0.0": {
+      "type": "project",
+      "path": "../DataBaseLogic/DataBaseLogic.csproj",
+      "msbuildProject": "../DataBaseLogic/DataBaseLogic.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "DataBaseLogic >= 1.0.0",
       "Microsoft.Data.Sqlite >= 10.0.0"
     ]
   },
@@ -370,7 +389,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Andromack\\Desktop\\Практика ПМ05\\OOOTablewar\\DataBaseLogic\\DataBaseLogic.csproj": {
+              "projectPath": "C:\\Users\\Andromack\\Desktop\\Практика ПМ05\\OOOTablewar\\DataBaseLogic\\DataBaseLogic.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
