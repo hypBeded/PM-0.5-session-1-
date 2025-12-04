@@ -23,5 +23,10 @@ namespace PresentationLogic.Windows
         {
             InitializeComponent();
         }
+
+        public void TasksListView_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
