@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLogic.Windows"
         mc:Ignorable="d"
-        Title="Products" Height="600" Width="800">
+        Title="Products" Height="600" Width="900">
     <Window.Resources>
         <!-- Стиль для кнопок сортировки -->
         <Style x:Key="SortButtonStyle" TargetType="Button">
@@ -69,6 +69,12 @@
                            VerticalAlignment="Center"
                            Margin="15,0,0,0"
                            FontStyle="Italic"/>
+                <!-- ФИО -->
+                <TextBlock x:Name="FIO" 
+           Text="Фамилия Имя Отчество" 
+           VerticalAlignment="Center"
+           Margin="15,0,0,0"
+           FontStyle="Italic"/>
             </StackPanel>
         </Border>
 

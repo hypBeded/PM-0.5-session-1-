@@ -22,6 +22,7 @@ namespace PresentationLogic.Windows
     /// </summary>
     public partial class SignUp : Window
     {
+        public User user;
         public SignUp()
         {
             InitializeComponent();
@@ -60,11 +61,13 @@ namespace PresentationLogic.Windows
                 command.Parameters.AddWithValue("@FIO", FIO);
                 command.Parameters.AddWithValue("@email", email);
                 command.Parameters.AddWithValue("@password", password);
+                user = new User(FIO, email, password, rol);
                 command.ExecuteNonQuery();
                 MessageBox.Show("Запись добавлена");
             }
-            LogIn logIn = new LogIn();
-            logIn.Show();
+            MessageBox.Show("Вход выполнен!");
+            Windows.Products products = new Windows.Products(user);
+            products.Show();
             this.Close();
         }
         private readonly string emailPattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"; //паттерн для проверки почты

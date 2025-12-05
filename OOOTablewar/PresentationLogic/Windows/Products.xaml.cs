@@ -11,7 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using Microsoft.Data.Sqlite;
+using DataBaseLogic;
 namespace PresentationLogic.Windows
 {
     /// <summary>
@@ -20,17 +21,19 @@ namespace PresentationLogic.Windows
    
     public partial class Products : Window
     {
-        
 
+        private User userlog;
             private readonly ProductsViewModel _viewModel;
             private string _currentSortField;
             private bool _sortAscending = true;
-        public Products()
+        public Products(User user)
         {
             InitializeComponent();
             _viewModel = new ProductsViewModel();
             this.DataContext = _viewModel;
             UpdateSortText();
+            userlog = user;
+            FIO.Text = userlog.Name;
         }
         private void SortByNameButton_Click(object sender, RoutedEventArgs e)
         {
