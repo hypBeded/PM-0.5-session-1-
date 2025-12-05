@@ -11,6 +11,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using PresentationLogic.Windows;
+using PresentationLogic.Interfaces;
+using System.Windows;
+using PresentationLogic.Services;
 namespace PresentationLogic
 {
     /// <summary>
@@ -18,80 +21,120 @@ namespace PresentationLogic
     /// </summary>
     public partial class LogIn : Window
     {
-        public User user;
+        private readonly IDatabaseService _databaseService;
+        private readonly IMessageService _messageService;
+        private readonly INavigationService _navigationService;
+
+        // Сделайте CurrentUser public
+        public User CurrentUser { get; private set; }
+
+        // Сделайте TextBox public для тестов
+        public System.Windows.Controls.TextBox LoginTextBox { get; private set; }
+        public System.Windows.Controls.TextBox PasswordTextBox { get; private set; }
         public LogIn()
         {
             InitializeComponent();
-        }
-        private void SignUp_Click(object sender, RoutedEventArgs e)
-        {
-            SignUp sign = new SignUp();
-            sign.Show();
-            this.Close();
-        }
+            _databaseService = new DatabaseService();
+            _messageService = new MessageService();
+            _navigationService = new PresentationLogic.Services.NavigationService();
 
-        private void LogInButton_Click(object sender, RoutedEventArgs e)
+            // Сохраняем ссылки на TextBox
+            LoginTextBox = Login;
+            PasswordTextBox = Password;
+        }
+        // Конструктор для тестирования
+        public LogIn(
+            IDatabaseService databaseService,
+            IMessageService messageService,
+            INavigationService navigationService)
         {
-            string login = Login.Text.Trim();
-            string password = Password.Text;
+            _databaseService = databaseService;
+            _messageService = messageService;
+            _navigationService = navigationService;
 
-            // Проверка на пустые значения
-            if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password))
+            // Инициализируем TextBox для тестов
+            LoginTextBox = new System.Windows.Controls.TextBox();
+            PasswordTextBox = new System.Windows.Controls.TextBox();
+
+            // Только если это реальные сервисы, инициализируем UI
+            if (databaseService is DatabaseService)
             {
-                MessageBox.Show("Введите логин и пароль");
+                InitializeComponent();
+                LoginTextBox = Login;
+                PasswordTextBox = Password;
+            }
+        }
+        public void SignUp_Click(object sender, RoutedEventArgs e)
+        {
+            //SignUp sign = new SignUp();
+            //sign.Show();
+            //this.Close();
+            _navigationService.NavigateToSignUp(this);
+        }
+
+        public void LogInButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Используем TextBox из конструктора
+            string email = LoginTextBox.Text.Trim();
+            string password = PasswordTextBox.Text;
+
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            {
+                _messageService.ShowMessage("Введите логин и пароль");
                 return;
             }
 
             try
             {
-                using (var connection = Context.GetConnection())
-                {
-                    // Простой запрос для проверки
-                    string query = @"
-                    SELECT ФИО, Логин, Пароль, Роль_сотрудника 
-                    FROM Users 
-                    WHERE Логин = @login AND Пароль = @password";
+                User user = _databaseService.AuthenticateUser(email, password);
 
-                    using (var cmd = new SqliteCommand(query, connection))
-                    {
-                        cmd.Parameters.AddWithValue("@login", login);
-                        cmd.Parameters.AddWithValue("@password", password);
-                        // Просто проверяем, вернулось ли что-то
-                        using (var reader = cmd.ExecuteReader())
-                        {
-                            if (reader.Read()) // Если есть хотя бы одна строка
-                            {
-                                // Заполняем объект User данными из базы
-                                user = new User(
-                                    reader["ФИО"].ToString(),
-                                    reader["Логин"].ToString(),
-                                    reader["Пароль"].ToString(),
-                                    reader["Роль_сотрудника"].ToString()
-                                );
-                                MessageBox.Show("Вход выполнен!");
-                                Windows.AddEditProbuct addEditProbuct = new Windows.AddEditProbuct(user);
-                                addEditProbuct.Show();
-                                this.Close();
-                                //Windows.Products products = new Windows.Products(user);
-                                //products.Show();
-                                //this.Close();
-                            }
-                            else
-                            {
-                                MessageBox.Show("Неверный логин или пароль");
-                            }
-                        }
-                    }
+                if (user != null)
+                {
+                    CurrentUser = user;
+                    _messageService.ShowMessage("Вход выполнен!");
+                    _navigationService.NavigateToAddEditProduct(user);
+                    this.Close();
                 }
-            }
-            catch (SqliteException sqlEx)
-            {
-                MessageBox.Show($"SQL ошибка: {sqlEx.Message}\nКод: {sqlEx.SqliteErrorCode}");
+                else
+                {
+                    _messageService.ShowMessage("Неверный логин или пароль");
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка: {ex.Message}");
+                _messageService.ShowError($"Ошибка: {ex.Message}");
             }
-        }     
+        
+        //var login = Login.Text.Trim();
+        //var password = Password.Text;
+
+        //if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password))
+        //{
+        //    _messageService.ShowMessage("Введите логин и пароль");
+        //    return;
+        //}
+
+        //try
+        //{
+        //    var user = _databaseService.AuthenticateUser(login, password);
+
+        //    if (user != null)
+        //    {
+        //        CurrentUser = user;
+        //        _messageService.ShowMessage("Вход выполнен!");
+        //        _navigationService.NavigateToAddEditProduct(user);
+        //        Close();
+        //    }
+        //    else
+        //    {
+        //        _messageService.ShowMessage("Неверный логин или пароль");
+        //    }
+        //}
+        //catch (Exception ex)
+        //{
+        //    _messageService.ShowError($"Ошибка: {ex.Message}");
+        //}
         }
+
     }
+}
