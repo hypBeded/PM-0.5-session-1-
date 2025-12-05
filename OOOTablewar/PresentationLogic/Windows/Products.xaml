@@ -69,12 +69,18 @@
                            VerticalAlignment="Center"
                            Margin="15,0,0,0"
                            FontStyle="Italic"/>
+                <!-- Количество в корзине --><!--
+                <TextBlock x:Name="Kolvo" 
+                           Text="Фамилия Имя Отчество" 
+                           VerticalAlignment="Center"
+                           Margin="15,0,0,0"
+                           FontStyle="Italic"/>-->
                 <!-- ФИО -->
                 <TextBlock x:Name="FIO" 
-           Text="Фамилия Имя Отчество" 
-           VerticalAlignment="Center"
-           Margin="15,0,0,0"
-           FontStyle="Italic"/>
+                           Text="Фамилия Имя Отчество" 
+                           VerticalAlignment="Center"
+                           Margin="15,0,0,0"
+                           FontStyle="Italic"/>
             </StackPanel>
         </Border>
 
@@ -129,7 +135,15 @@
                                                Foreground="Gray"
                                                Margin="0,5,0,0"/>
                                 </StackPanel>
-                            </StackPanel>
+                                <!--Добавить в корзину--><!--
+                                <StackPanel>
+                                    <Button x:Name="AddBasket" 
+                                    Content="Добавить в корзину" 
+                                             Background="#498c51"
+                                            Foreground="White"
+                                    Style="{StaticResource SortButtonStyle}"/>
+                                </StackPanel>-->
+                                </StackPanel>
                         </Border>
                     </DataTemplate>
                 </ListView.ItemTemplate>
