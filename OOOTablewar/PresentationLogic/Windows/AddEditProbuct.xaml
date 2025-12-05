@@ -1,138 +1,188 @@
-﻿<Window x:Class="PresentationLogic.Windows.AddEditProbuct"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLogic.Windows"
+        xmlns:System="clr-namespace:System;assembly=System.Runtime" x:Class="PresentationLogic.Windows.AddEditProbuct"
         mc:Ignorable="d"
-        Title="AddEditProbuct" Height="450" Width="800">
-    <Grid>
-        <TextBox x:Name="Artikul" 
-         Text="Артикул"
-         BorderBrush="Black" 
-         BorderThickness="1" 
-         Margin="10,47,608,357"  
-         HorizontalContentAlignment="Left"
-         VerticalContentAlignment="Center"
-         FontFamily="Comic Sans MS"
-         FontSize="18"
-         Padding="10,0" />
-        <TextBox x:Name="Name" 
-            Text="Наименование"
-            BorderBrush="Black" 
-            BorderThickness="1" 
-            Margin="10,95,608,309"  
-            HorizontalContentAlignment="Left"
-            VerticalContentAlignment="Center"
-            FontFamily="Comic Sans MS"
-            FontSize="18"
-            Padding="10,0" />
-        <TextBox x:Name="Price" 
-            Text="Стоимость"
-            BorderBrush="Black" 
-            BorderThickness="1" 
-            Margin="10,144,608,260"  
-            HorizontalContentAlignment="Left"
-            VerticalContentAlignment="Center"
-            FontFamily="Comic Sans MS"
-            FontSize="18"
-            Padding="10,0" />
-        <TextBox x:Name="MaxDiscount" 
-            Text="Размер максимально возможной скидки"
-            BorderBrush="Black" 
-            BorderThickness="1" 
-            Margin="218,47,192,357"  
-            HorizontalContentAlignment="Left"
-            VerticalContentAlignment="Center"
-            FontFamily="Comic Sans MS"
-            FontSize="18"
-            Padding="10,0" />
-        <TextBox x:Name="Manufacturer" 
-            Text="Производитель"
-            BorderBrush="Black" 
-            BorderThickness="1" 
-            Margin="10,193,608,211"  
-            HorizontalContentAlignment="Left"
-            VerticalContentAlignment="Center"
-            FontFamily="Comic Sans MS"
-            FontSize="18"
-            Padding="10,0" />
-        <TextBox x:Name="Supplier" 
-            Text="Поставщик"
-            BorderBrush="Black" 
-            BorderThickness="1" 
-            Margin="10,239,608,165"  
-            HorizontalContentAlignment="Left"
-            VerticalContentAlignment="Center"
-            FontFamily="Comic Sans MS"
-            FontSize="18"
-            Padding="10,0" />
-        <TextBox x:Name="Category" 
-            Text="Категория товара"
-            BorderBrush="Black" 
-            BorderThickness="1" 
-            Margin="218,193,370,211"  
-            HorizontalContentAlignment="Left"
-            VerticalContentAlignment="Center"
-            FontFamily="Comic Sans MS"
-            FontSize="18"
-            Padding="10,0" />
-        <TextBox x:Name="CurrentDiscount" 
-            Text="Действующая скидка"
-            BorderBrush="Black" 
-            BorderThickness="1" 
-            Margin="218,95,370,309"  
-            HorizontalContentAlignment="Left"
-            VerticalContentAlignment="Center"
-            FontFamily="Comic Sans MS"
-            FontSize="18"
-            Padding="10,0" />
-        <TextBox x:Name="StockQuantity" 
-            Text="Кол-во на складе"
-            BorderBrush="Black" 
-            BorderThickness="1" 
-            Margin="218,144,370,260"  
-            HorizontalContentAlignment="Left"
-            VerticalContentAlignment="Center"
-            FontFamily="Comic Sans MS"
-            FontSize="18"
-            Padding="10,0" />
-        <TextBox x:Name="Description" 
-            Text="Описание"
-            BorderBrush="Black" 
-            BorderThickness="1" 
-            Margin="10,285,370,29"  
-            HorizontalContentAlignment="Left"
-            VerticalContentAlignment="Center"
-            FontFamily="Comic Sans MS"
-            FontSize="18"
-            TextWrapping="Wrap"
-            Padding="10,0" />
-        <Image HorizontalAlignment="Left" Height="164" Margin="528,95,0,0" VerticalAlignment="Top" Width="164" Source="/Windows/заглушка.jpg"/>
-        <Button 
-            Style="{DynamicResource BorderForButton}"
-            x:Name="SaveButton" 
-            Content="Сохранить" 
-            BorderBrush="Black" 
-            BorderThickness="1" 
-            FontSize="24" 
-            FontFamily="Comic Sans MS" 
-            Background="#76e383"
-            Foreground="Black"
-            FontWeight="Bold"
-            Cursor="Hand"  Margin="535,285,115,99"  />
-        <Button 
-            Style="{DynamicResource BorderForButton}"
-            x:Name="ExitButton" 
-            Content="Отменить" 
-            BorderBrush="Black" 
-            BorderThickness="1" 
-            FontSize="24" 
-            FontFamily="Comic Sans MS" 
-            Background="#498c51"
-            Foreground="Black"
-            FontWeight="Bold"
-            Cursor="Hand"  Margin="535,355,115,29"  />
+               Title="AddEditProbuct" 
+        Height="450" 
+        Width="800"
+        MinWidth="800"
+        MinHeight="450">
 
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Первая колонка -->
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Артикул:" Margin="0,5" VerticalAlignment="Center" FontSize="16" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="Artikul" 
+                 Grid.Row="0" Grid.Column="1"
+                 Margin="5"  
+                 HorizontalContentAlignment="Left"
+                 VerticalContentAlignment="Center"
+                 FontFamily="Comic Sans MS"
+                 FontSize="16"
+                 Padding="5"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Наименование:" Margin="0,5" VerticalAlignment="Center" FontSize="16" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="Name" 
+                 Grid.Row="1" Grid.Column="1"
+                 Margin="5"  
+                 HorizontalContentAlignment="Left"
+                 VerticalContentAlignment="Center"
+                 FontFamily="Comic Sans MS"
+                 FontSize="16"
+                 Padding="5"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Стоимость:" Margin="0,5" VerticalAlignment="Center" FontSize="16" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="Price" 
+                 Grid.Row="2" Grid.Column="1"
+                 Margin="5"  
+                 HorizontalContentAlignment="Left"
+                 VerticalContentAlignment="Center"
+                 FontFamily="Comic Sans MS"
+                 FontSize="16"
+                 Padding="5"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Производитель:" Margin="0,5" VerticalAlignment="Center" FontSize="16" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="Manufacturer" 
+                 Grid.Row="3" Grid.Column="1"
+                 Margin="5"  
+                 HorizontalContentAlignment="Left"
+                 VerticalContentAlignment="Center"
+                 FontFamily="Comic Sans MS"
+                 FontSize="16"
+                 Padding="5"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Поставщик:" Margin="0,5" VerticalAlignment="Center" FontSize="16" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="Supplier" 
+                 Grid.Row="4" Grid.Column="1"
+                 Margin="5"  
+                 HorizontalContentAlignment="Left"
+                 VerticalContentAlignment="Center"
+                 FontFamily="Comic Sans MS"
+                 FontSize="16"
+                 Padding="5"/>
+
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Описание:" Margin="0,5" VerticalAlignment="Top" FontSize="16" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="Description" 
+                 Grid.Row="5" Grid.Column="1"
+                 Margin="5,5,10,5"  
+                 HorizontalContentAlignment="Left"
+                 VerticalContentAlignment="Top"
+                 FontFamily="Comic Sans MS"
+                 FontSize="16"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 MinHeight="100"
+                 Padding="5" Grid.ColumnSpan="2"/>
+
+        <!-- Вторая колонка -->
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="Макс. скидка:" Margin="10,5,0,5" VerticalAlignment="Center" FontSize="16" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="MaxDiscount" 
+                 Grid.Row="0" Grid.Column="3"
+                 Margin="5"  
+                 HorizontalContentAlignment="Left"
+                 VerticalContentAlignment="Center"
+                 FontFamily="Comic Sans MS"
+                 FontSize="16"
+                 Padding="5"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="Тек. скидка:" Margin="10,5,0,5" VerticalAlignment="Center" FontSize="16" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="CurrentDiscount" 
+                 Grid.Row="1" Grid.Column="3"
+                 Margin="5"  
+                 HorizontalContentAlignment="Left"
+                 VerticalContentAlignment="Center"
+                 FontFamily="Comic Sans MS"
+                 FontSize="16"
+                 Padding="5"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="2" Text="Кол-во на складе:" Margin="10,5,0,5" VerticalAlignment="Center" FontSize="16" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="StockQuantity" 
+                 Grid.Row="2" Grid.Column="3"
+                 Margin="5"  
+                 HorizontalContentAlignment="Left"
+                 VerticalContentAlignment="Center"
+                 FontFamily="Comic Sans MS"
+                 FontSize="16"
+                 Padding="5"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="2" Text="Категория:" Margin="10,5,0,5" VerticalAlignment="Center" FontSize="16" FontFamily="Comic Sans MS"/>
+        <ComboBox x:Name="Category" 
+                 Grid.Row="3" Grid.Column="3"
+                 Margin="5"  
+                 HorizontalContentAlignment="Left"
+                 VerticalContentAlignment="Center"
+                 FontFamily="Comic Sans MS"
+                 FontSize="16"
+                 Padding="5">
+            <System:String>Кастрюли</System:String>
+            <System:String>Сервиз</System:String>
+            <System:String>Сковорода</System:String>
+            <System:String>Посуда</System:String>
+        </ComboBox>
+
+        <!-- Изображение -->
+        <Border Grid.Row="0" Grid.Column="4" Grid.RowSpan="4"
+                BorderBrush="Black" 
+                BorderThickness="1"
+                Margin="10,0,0,0"
+                Width="164"
+                Height="164">
+            <Image x:Name="Image" 
+                   Source="/Windows/заглушка.jpg" 
+                   MouseDown="Image_MouseDown"
+                   Stretch="Uniform"/>
+        </Border>
+
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="5"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="0,10,0,0">
+            <Button x:Name="SaveButton" 
+                    Content="Сохранить" 
+                    Width="120"
+                    Height="40"
+                    Margin="5,0"
+                    FontSize="18" 
+                    FontFamily="Comic Sans MS" 
+                    Background="#76e383"
+                    Foreground="Black"
+                    FontWeight="Bold"
+                    Cursor="Hand" 
+                    Click="SaveButton_Click"/>
+
+            <Button x:Name="ExitButton" 
+                    Content="Отменить" 
+                    Width="120"
+                    Height="40"
+                    Margin="5,0"
+                    FontSize="18" 
+                    FontFamily="Comic Sans MS" 
+                    Background="#498c51"
+                    Foreground="Black"
+                    FontWeight="Bold"
+                    Cursor="Hand"/>
+        </StackPanel>
     </Grid>
 </Window>

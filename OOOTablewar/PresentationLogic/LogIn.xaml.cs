@@ -25,7 +25,6 @@ namespace PresentationLogic
         }
         private void SignUp_Click(object sender, RoutedEventArgs e)
         {
-
             SignUp sign = new SignUp();
             sign.Show();
             this.Close();
@@ -70,9 +69,12 @@ namespace PresentationLogic
                                     reader["Роль_сотрудника"].ToString()
                                 );
                                 MessageBox.Show("Вход выполнен!");
-                                Windows.Products products = new Windows.Products(user);
-                                products.Show();
+                                Windows.AddEditProbuct addEditProbuct = new Windows.AddEditProbuct(user);
+                                addEditProbuct.Show();
                                 this.Close();
+                                //Windows.Products products = new Windows.Products(user);
+                                //products.Show();
+                                //this.Close();
                             }
                             else
                             {

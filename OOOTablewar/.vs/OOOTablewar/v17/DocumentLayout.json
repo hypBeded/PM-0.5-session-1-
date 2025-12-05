@@ -11,12 +11,32 @@
       "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\windows\\addeditprobuct.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\05\\oootablewar\\presentationlogic\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\05\\oootablewar\\presentationlogic\\windows\\products.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\windows\\products.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\05\\oootablewar\\presentationlogic\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\05\\oootablewar\\presentationlogic\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\05\\oootablewar\\presentationlogic\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\05\\oootablewar\\presentationlogic\\windows\\signup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\windows\\signup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\05\\oootablewar\\presentationlogic\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\05\\oootablewar\\presentationlogic\\windows\\products.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\windows\\products.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\05\\oootablewar\\presentationlogic\\windows\\basket.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,20 +47,8 @@
       "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\windows\\basket.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\05\\oootablewar\\presentationlogic\\windows\\products.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\windows\\products.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\05\\oootablewar\\presentationlogic\\windows\\profile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\windows\\profile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\05\\oootablewar\\presentationlogic\\windows\\products.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\windows\\products.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|c:\\users\\andromack\\desktop\\05\\oootablewar\\presentationlogic\\windows\\signup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1273B050-BF1E-4C60-902C-06E63F6C0848}|PresentationLogic\\PresentationLogic.csproj|solutionrelative:presentationlogic\\windows\\signup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,6 +78,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddEditProbuct.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\AddEditProbuct.xaml.cs",
+              "RelativeDocumentMoniker": "PresentationLogic\\Windows\\AddEditProbuct.xaml.cs",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\AddEditProbuct.xaml.cs",
+              "RelativeToolTip": "PresentationLogic\\Windows\\AddEditProbuct.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAADGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:08:47.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AddEditProbuct.xaml",
               "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\AddEditProbuct.xaml",
@@ -77,51 +98,89 @@
               "ToolTip": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\AddEditProbuct.xaml",
               "RelativeToolTip": "PresentationLogic\\Windows\\AddEditProbuct.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-05T10:07:00.946Z",
+              "WhenOpened": "2025-12-05T11:23:11.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Products.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\Products.xaml.cs",
+              "RelativeDocumentMoniker": "PresentationLogic\\Windows\\Products.xaml.cs",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\Products.xaml.cs",
+              "RelativeToolTip": "PresentationLogic\\Windows\\Products.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwBwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T03:26:07.416Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ProductViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\ProductViewModel.cs",
+              "RelativeDocumentMoniker": "PresentationLogic\\ProductViewModel.cs",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\ProductViewModel.cs",
+              "RelativeToolTip": "PresentationLogic\\ProductViewModel.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T11:04:13.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SignUp.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\SignUp.xaml.cs",
+              "RelativeDocumentMoniker": "PresentationLogic\\Windows\\SignUp.xaml.cs",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\SignUp.xaml.cs",
+              "RelativeToolTip": "PresentationLogic\\Windows\\SignUp.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwEYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T10:52:37.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LogIn.xaml",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\LogIn.xaml",
+              "RelativeDocumentMoniker": "PresentationLogic\\LogIn.xaml",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\LogIn.xaml",
+              "RelativeToolTip": "PresentationLogic\\LogIn.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-05T03:34:39.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ProductModel.cs",
               "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\ProductModel.cs",
               "RelativeDocumentMoniker": "PresentationLogic\\ProductModel.cs",
               "ToolTip": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\ProductModel.cs",
               "RelativeToolTip": "PresentationLogic\\ProductModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-05T03:23:47.586Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddEditProbuct.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\AddEditProbuct.xaml.cs",
-              "RelativeDocumentMoniker": "PresentationLogic\\Windows\\AddEditProbuct.xaml.cs",
-              "ToolTip": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\AddEditProbuct.xaml.cs",
-              "RelativeToolTip": "PresentationLogic\\Windows\\AddEditProbuct.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAMwBgAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "LogIn.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\LogIn.xaml.cs",
+              "RelativeDocumentMoniker": "PresentationLogic\\LogIn.xaml.cs",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\LogIn.xaml.cs",
+              "RelativeToolTip": "PresentationLogic\\LogIn.xaml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwEkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T10:08:47.286Z",
+              "WhenOpened": "2025-12-05T11:13:07.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Basket.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\Basket.xaml.cs",
-              "RelativeDocumentMoniker": "PresentationLogic\\Windows\\Basket.xaml.cs",
-              "ToolTip": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\Basket.xaml.cs",
-              "RelativeToolTip": "PresentationLogic\\Windows\\Basket.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T10:05:47.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Products.xaml",
               "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\Products.xaml",
               "RelativeDocumentMoniker": "PresentationLogic\\Windows\\Products.xaml",
@@ -134,44 +193,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "SignUp.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\SignUp.xaml.cs",
-              "RelativeDocumentMoniker": "PresentationLogic\\Windows\\SignUp.xaml.cs",
-              "ToolTip": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\SignUp.xaml.cs",
-              "RelativeToolTip": "PresentationLogic\\Windows\\SignUp.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwDQAAAAiAAAAAAAAAA==",
+              "Title": "Basket.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\Basket.xaml.cs",
+              "RelativeDocumentMoniker": "PresentationLogic\\Windows\\Basket.xaml.cs",
+              "ToolTip": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\Basket.xaml.cs",
+              "RelativeToolTip": "PresentationLogic\\Windows\\Basket.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T10:52:37.322Z",
+              "WhenOpened": "2025-12-05T10:05:47.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LogIn.xaml",
-              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\LogIn.xaml",
-              "RelativeDocumentMoniker": "PresentationLogic\\LogIn.xaml",
-              "ToolTip": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\LogIn.xaml",
-              "RelativeToolTip": "PresentationLogic\\LogIn.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-05T03:34:39.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Products.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\Products.xaml.cs",
-              "RelativeDocumentMoniker": "PresentationLogic\\Windows\\Products.xaml.cs",
-              "ToolTip": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\Products.xaml.cs",
-              "RelativeToolTip": "PresentationLogic\\Windows\\Products.xaml.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAkwCMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T03:26:07.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Profile.xaml",
               "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\Profile.xaml",
               "RelativeDocumentMoniker": "PresentationLogic\\Windows\\Profile.xaml",
@@ -183,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Basket.xaml",
               "DocumentMoniker": "C:\\Users\\Andromack\\Desktop\\05\\OOOTablewar\\PresentationLogic\\Windows\\Basket.xaml",
               "RelativeDocumentMoniker": "PresentationLogic\\Windows\\Basket.xaml",

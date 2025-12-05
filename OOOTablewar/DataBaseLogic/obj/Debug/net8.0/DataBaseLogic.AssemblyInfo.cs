@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataBaseLogic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db52afbbfbba2d1450147769460596a865e5a405")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb457081a7129d933adbac2cf84f88facea3ed73")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataBaseLogic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataBaseLogic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

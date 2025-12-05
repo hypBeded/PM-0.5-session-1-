@@ -22,7 +22,7 @@ namespace PresentationLogic.Windows
     public partial class Products : Window
     {
 
-        private User userlog;
+            private User userlog;
             private readonly ProductsViewModel _viewModel;
             private string _currentSortField;
             private bool _sortAscending = true;
