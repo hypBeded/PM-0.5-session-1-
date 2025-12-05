@@ -17,16 +17,16 @@ namespace PresentationLogic.Windows
     /// <summary>
     /// Логика взаимодействия для Products.xaml
     /// </summary>
+   
     public partial class Products : Window
     {
+        private readonly ProductsViewModel _viewModel;
+
         public Products()
         {
             InitializeComponent();
-        }
-
-        public void TasksListView_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
-        {
-
+            _viewModel = new ProductsViewModel();
+            this.DataContext = _viewModel;
         }
     }
 }

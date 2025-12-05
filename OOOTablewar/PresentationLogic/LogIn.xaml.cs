@@ -32,56 +32,71 @@ namespace PresentationLogic
 
         private void LogInButton_Click(object sender, RoutedEventArgs e)
         {
-            string login = Login.Text.Trim();
-            string password = Password.Text;
 
-            // Проверка на пустые значения
-            if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password))
-            {
-                MessageBox.Show("Введите логин и пароль");
-                return;
-            }
+            Windows.Products products = new Windows.Products();
+                                 products.Show();
+                             this.Close();
 
-            try
-            {
-                // Временное упрощенное подключение
-                using (var connection = Context.GetConnection())
-                {
 
-                    // Простой запрос для проверки
-                    string query = "SELECT 1 FROM Users WHERE Логин = @login AND Пароль = @password";
 
-                    using (var cmd = new SqliteCommand(query, connection))
-                    {
-                        cmd.Parameters.AddWithValue("@login", login);
-                        cmd.Parameters.AddWithValue("@password", password);
 
-                        // Просто проверяем, вернулось ли что-то
-                        using (var reader = cmd.ExecuteReader())
-                        {
-                            if (reader.Read()) // Если есть хотя бы одна строка
-                            {
-                                MessageBox.Show("Вход выполнен!");
-                                Windows.Products products = new Windows.Products();
-                                products.Show();
-                                this.Close();
-                            }
-                            else
-                            {
-                                MessageBox.Show("Неверный логин или пароль");
-                            }
-                        }
-                    }
-                }
-            }
-            catch (SqliteException sqlEx)
-            {
-                MessageBox.Show($"SQL ошибка: {sqlEx.Message}\nКод: {sqlEx.SqliteErrorCode}");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка: {ex.Message}");
-            }
-        }     
+
+
+
+
+
+
+
+            //    string login = Login.Text.Trim();
+            //    string password = Password.Text;
+
+            //    // Проверка на пустые значения
+            //    if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password))
+            //    {
+            //        MessageBox.Show("Введите логин и пароль");
+            //        return;
+            //    }
+
+            //    try
+            //    {
+            //        // Временное упрощенное подключение
+            //        using (var connection = Context.GetConnection())
+            //        {
+
+            //            // Простой запрос для проверки
+            //            string query = "SELECT 1 FROM Users WHERE Логин = @login AND Пароль = @password";
+
+            //            using (var cmd = new SqliteCommand(query, connection))
+            //            {
+            //                cmd.Parameters.AddWithValue("@login", login);
+            //                cmd.Parameters.AddWithValue("@password", password);
+
+            //                // Просто проверяем, вернулось ли что-то
+            //                using (var reader = cmd.ExecuteReader())
+            //                {
+            //                    if (reader.Read()) // Если есть хотя бы одна строка
+            //                    {
+            //                        MessageBox.Show("Вход выполнен!");
+            //                        Windows.Products products = new Windows.Products();
+            //                        products.Show();
+            //                        this.Close();
+            //                    }
+            //                    else
+            //                    {
+            //                        MessageBox.Show("Неверный логин или пароль");
+            //                    }
+            //                }
+            //            }
+            //        }
+            //    }
+            //    catch (SqliteException sqlEx)
+            //    {
+            //        MessageBox.Show($"SQL ошибка: {sqlEx.Message}\nКод: {sqlEx.SqliteErrorCode}");
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        MessageBox.Show($"Ошибка: {ex.Message}");
+            //    }
+            }     
+        }
     }
-}
