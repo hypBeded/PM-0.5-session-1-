@@ -9,11 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Windows\заглушка.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DataBaseLogic\DataBaseLogic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Windows\заглушка.jpg" />
   </ItemGroup>
 
 </Project>
