@@ -9,67 +9,61 @@ namespace PresentationLogic.Windows
 {
     public partial class Basket : Window
     {
-        public class BasketItem
-        {
-            public int Id { get; set; }
-            public string Name { get; set; }
-            public string Description { get; set; }
-            public string Manufacturer { get; set; }
-            public decimal Price { get; set; }
-            public int Quantity { get; set; }
-            public string Image { get; set; }
-            public decimal TotalPrice => Price * Quantity;
-        }
-
-        private ObservableCollection<BasketItem> basketItems = new ObservableCollection<BasketItem>();
+        // Удаляем внутренний класс BasketItem и статическую коллекцию
+        // Вместо них используем репозиторий
+        private BasketRepository basketRepository = new BasketRepository();
+        private ObservableCollection<BasketRepository.BasketItem> basketItems;
         private User userlog;
+
         public Basket(User user)
         {
             userlog = user;
             InitializeComponent();
+
+            // Получаем коллекцию из репозитория
+            basketItems = basketRepository.GetAllItems();
             BasketListView.ItemsSource = basketItems;
+
             UpdateTotal();
             FIO.Text = user.Name;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            // Загрузка тестовых данных (в реальном приложении здесь будет загрузка из БД)
             LoadSampleData();
         }
 
         private void LoadSampleData()
         {
-            // Пример данных
-            basketItems.Add(new BasketItem
-            {
-                Id = 1,
-                Name = "Ноутбук ASUS",
-                Description = "15.6 дюймов, Intel Core i5, 8GB RAM",
-                Manufacturer = "ASUS",
-                Price = 45000,
-                Quantity = 1,
-                Image = "/Images/laptop.jpg"
-            });
+            // Используем репозиторий для добавления данных
+            basketRepository.AddItem(
+                1,
+                "Ноутбук ASUS",
+                "15.6 дюймов, Intel Core i5, 8GB RAM",
+                "ASUS",
+                45000,
+                1,
+                "/Images/laptop.jpg"
+            );
 
-            basketItems.Add(new BasketItem
-            {
-                Id = 2,
-                Name = "Смартфон Samsung",
-                Description = "6.2 дюйма, 128GB",
-                Manufacturer = "Samsung",
-                Price = 32000,
-                Quantity = 2,
-                Image = "/Images/phone.jpg"
-            });
+            basketRepository.AddItem(
+                2,
+                "Смартфон Samsung",
+                "6.2 дюйма, 128GB",
+                "Samsung",
+                32000,
+                2,
+                "/Images/phone.jpg"
+            );
 
             UpdateTotal();
         }
 
         private void UpdateTotal()
         {
-            int totalItems = basketItems.Sum(item => item.Quantity);
-            decimal totalPrice = basketItems.Sum(item => item.TotalPrice);
+
+            int totalItems = basketRepository.GetTotalItemsCount();
+            decimal totalPrice = basketRepository.GetTotalPrice();
 
             TotalItemsText.Text = totalItems.ToString();
             TotalPriceText.Text = totalPrice.ToString("C");
@@ -82,9 +76,8 @@ namespace PresentationLogic.Windows
                 var item = basketItems.FirstOrDefault(x => x.Id == id);
                 if (item != null)
                 {
-                    item.Quantity++;
+                    basketRepository.UpdateQuantity(id, item.Quantity + 1);
                     UpdateTotal();
-                    // Обновляем отображение
                     BasketListView.Items.Refresh();
                 }
             }
@@ -97,9 +90,14 @@ namespace PresentationLogic.Windows
                 var item = basketItems.FirstOrDefault(x => x.Id == id);
                 if (item != null && item.Quantity > 1)
                 {
-                    item.Quantity--;
+                    basketRepository.UpdateQuantity(id, item.Quantity - 1);
                     UpdateTotal();
                     BasketListView.Items.Refresh();
+                }
+                else if (item != null && item.Quantity == 1)
+                {
+                    basketRepository.RemoveItem(id);
+                    UpdateTotal();
                 }
             }
         }
@@ -108,12 +106,8 @@ namespace PresentationLogic.Windows
         {
             if (sender is Button button && button.Tag is int id)
             {
-                var item = basketItems.FirstOrDefault(x => x.Id == id);
-                if (item != null)
-                {
-                    basketItems.Remove(item);
-                    UpdateTotal();
-                }
+                basketRepository.RemoveItem(id);
+                UpdateTotal();
             }
         }
 
@@ -127,14 +121,13 @@ namespace PresentationLogic.Windows
 
             if (result == MessageBoxResult.Yes)
             {
-                basketItems.Clear();
+                basketRepository.Clear();
                 UpdateTotal();
             }
         }
 
         private void ContinueShoppingButton_Click(object sender, RoutedEventArgs e)
         {
-            // Возвращаемся к окну продуктов
             var productsWindow = new Products(userlog);
             productsWindow.Show();
             this.Close();
@@ -149,63 +142,29 @@ namespace PresentationLogic.Windows
                 return;
             }
 
-            // Здесь логика оформления заказа
             MessageBox.Show($"Заказ оформлен!\n\n" +
-                          $"Товаров: {basketItems.Sum(x => x.Quantity)}\n" +
-                          $"Общая сумма: {basketItems.Sum(x => x.TotalPrice):C}",
+                          $"Товаров: {basketRepository.GetTotalItemsCount()}\n" +
+                          $"Общая сумма: {basketRepository.GetTotalPrice():C}",
                           "Заказ оформлен",
                           MessageBoxButton.OK,
                           MessageBoxImage.Information);
 
-            // Очищаем корзину после оформления
-            basketItems.Clear();
+            basketRepository.Clear();
             UpdateTotal();
         }
-
-        // Метод для добавления товара в корзину (может вызываться из окна продуктов)
         public void AddToBasket(int productId, string name, string description,
                                string manufacturer, decimal price, string image)
         {
-            var existingItem = basketItems.FirstOrDefault(x => x.Id == productId);
-
-            if (existingItem != null)
-            {
-                existingItem.Quantity++;
-            }
-            else
-            {
-                basketItems.Add(new BasketItem
-                {
-                    Id = productId,
-                    Name = name,
-                    Description = description,
-                    Manufacturer = manufacturer,
-                    Price = price,
-                    Quantity = 1,
-                    Image = image
-                });
-            }
-
+            basketRepository.AddItem(productId, name, description, manufacturer, price, 1, image);
             UpdateTotal();
             BasketListView.Items.Refresh();
         }
-    }
 
-    // Converter для форматирования цены (опционально)
-    public class PriceConverter : System.Windows.Data.IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        public static void AddProductToBasket(int productId, string name, string description,
+                                             string manufacturer, decimal price, string image)
         {
-            if (value is decimal price)
-            {
-                return price.ToString("C", culture);
-            }
-            return value;
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-        {
-            throw new NotImplementedException();
+            var repository = new BasketRepository();
+            repository.AddItem(productId, name, description, manufacturer, price, 1, image);
         }
     }
 }

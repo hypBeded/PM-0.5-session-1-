@@ -22,7 +22,7 @@ namespace PresentationLogic.Windows
 
     public partial class AdminProduct : Window
     {
-
+        BasketRepository BasketRepository = new BasketRepository();
         private User userlog;
         private readonly ProductsViewModel _viewModel;
         private string _currentSortField;
@@ -42,7 +42,7 @@ namespace PresentationLogic.Windows
 
             var cartWindow = new Basket(userlog);
             cartWindow.Show();
-            this.Show();
+            this.Close();
 
 
         }
@@ -82,6 +82,8 @@ namespace PresentationLogic.Windows
         }
         private void AddBasket_Click(object sender, RoutedEventArgs e)
         {
+            ////
+            ///
 
         }
         private void ResetSortButton_Click(object sender, RoutedEventArgs e)
