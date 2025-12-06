@@ -19,15 +19,15 @@ namespace PresentationLogic.Windows
     /// <summary>
     /// Логика взаимодействия для Products.xaml
     /// </summary>
-   
-    public partial class Products : Window
+
+    public partial class AdminProduct : Window
     {
 
-            private User userlog;
-            private readonly ProductsViewModel _viewModel;
-            private string _currentSortField;
-            private bool _sortAscending = true;
-        public Products(User user)
+        private User userlog;
+        private readonly ProductsViewModel _viewModel;
+        private string _currentSortField;
+        private bool _sortAscending = true;
+        public AdminProduct(User user)
         {
             InitializeComponent();
             _viewModel = new ProductsViewModel();
@@ -39,12 +39,12 @@ namespace PresentationLogic.Windows
 
         private void CartButton_Click(object sender, RoutedEventArgs e)
         {
-            
+
             var cartWindow = new Basket(userlog);
             cartWindow.Show();
             this.Show();
 
-            
+
         }
 
 
@@ -68,13 +68,32 @@ namespace PresentationLogic.Windows
         {
             SortProducts("Manufacturer", "по производителю");
         }
-        
-        private void ResetSortButton_Click(object sender, RoutedEventArgs e)
+        private void AddProductButton_Click(object sender, RoutedEventArgs e)
         {
            
         }
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+        private void AddBasket_Click(object sender, RoutedEventArgs e)
+        {
 
-      
+        }
+        private void ResetSortButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+
+
+
+
 
         private void SortProducts(string fieldName, string displayName)
         {

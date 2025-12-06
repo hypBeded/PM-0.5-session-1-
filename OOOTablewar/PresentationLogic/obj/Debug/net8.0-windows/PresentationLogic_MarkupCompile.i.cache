@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Andromack\Desktop\05\OOOTablewar\PresentationLogic\obj\Debug\net8.0-windows\
+C:\Users\uymae\Desktop\PM-0.5-session-1-\OOOTablewar\PresentationLogic\obj\Debug\net8.0-windows\
 PresentationLogic
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\Andromack\Desktop\05\OOOTablewar\PresentationLogic\App.xaml
-6-2045079884
+C:\Users\uymae\Desktop\PM-0.5-session-1-\OOOTablewar\PresentationLogic\App.xaml
+7-1642573503
 
-132033685754
-2032048157098
-LogIn.xaml;Windows\AddEditProbuct.xaml;Windows\Basket.xaml;Windows\Products.xaml;Windows\Profile.xaml;Windows\SignUp.xaml;
+141844410399
+203284433165
+LogIn.xaml;Windows\AddEditProbuct.xaml;Windows\AdminProduct.xaml;Windows\Basket.xaml;Windows\Products.xaml;Windows\Profile.xaml;Windows\SignUp.xaml;
 
-True
+False
 

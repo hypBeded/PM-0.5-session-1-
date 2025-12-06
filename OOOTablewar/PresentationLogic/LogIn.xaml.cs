@@ -32,6 +32,7 @@ namespace PresentationLogic
 
         private void LogInButton_Click(object sender, RoutedEventArgs e)
         {
+          
             string login = Login.Text.Trim();
             string password = Password.Text;
 
@@ -46,6 +47,15 @@ namespace PresentationLogic
             {
                 using (var connection = Context.GetConnection())
                 {
+
+
+
+
+
+
+
+
+
                     // Простой запрос для проверки
                     string query = @"
                     SELECT ФИО, Логин, Пароль, Роль_сотрудника 
@@ -68,20 +78,28 @@ namespace PresentationLogic
                                     reader["Пароль"].ToString(),
                                     reader["Роль_сотрудника"].ToString()
                                 );
+
+
                                 MessageBox.Show("Вход выполнен!");
-                                Windows.AddEditProbuct addEditProbuct = new Windows.AddEditProbuct(user);
-                                addEditProbuct.Show();
+
+                                AdminProduct adminProduct =  new AdminProduct(user);
+                                adminProduct.Show();
                                 this.Close();
-                                //Windows.Products products = new Windows.Products(user);
-                                //products.Show();
-                                //this.Close();
+
+                               /*  Windows.AddEditProbuct addEditProbuct = new Windows.AddEditProbuct(user);
+                                addEditProbuct.Show();
+                                this.Close(); */
+
+                                /* Windows.Products products = new Windows.Products(user);
+                                 products.Show();
+                                 this.Close(); */
                             }
                             else
                             {
                                 MessageBox.Show("Неверный логин или пароль");
                             }
                         }
-                    }
+                    } 
                 }
             }
             catch (SqliteException sqlEx)
@@ -92,6 +110,6 @@ namespace PresentationLogic
             {
                 MessageBox.Show($"Ошибка: {ex.Message}");
             }
-        }     
         }
+    }
     }

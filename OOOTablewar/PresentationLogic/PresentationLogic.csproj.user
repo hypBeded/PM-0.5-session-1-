@@ -10,6 +10,9 @@
     <Compile Update="Windows\AddEditProbuct.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\AdminProduct.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Windows\Basket.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
